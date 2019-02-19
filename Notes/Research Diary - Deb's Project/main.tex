@@ -1,0 +1,102 @@
+%%% Research Diary - Entry
+%%% Template by Mikhail Klassen, April 2013
+%%% 
+\documentclass[11pt,letterpaper]{article}
+
+\newcommand{\workingDate}{\textsc{2019 $|$ February $|$ 19}}
+
+\newcommand{\userName}{Ilana Trumble}
+\newcommand{\institution}{CU Anschutz}
+\usepackage{researchdiary_png}
+\usepackage{multirow}
+\usepackage{float}
+\restylefloat{table}
+% To add your univeristy logo to the upper right, simply
+% upload a file named "logo.png" using the files menu above.
+
+\begin{document}
+\univlogo
+
+\title{Research Diary}
+
+{\Huge February 19, 2019}\\[5mm]
+
+\section*{Bonferroni is too conservative when tests are correlated }
+
+\subsection*{Proof for two tests}
+
+Consider the following 2 by 2 table, depicting the joint likelihood that two tests will be accepted or rejected.
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[H]
+\begin{tabular}{lllll}
+ &  & \multicolumn{2}{c}{X = Test 2} &  \\
+ &  & X=1 (Reject) & X=0 (Do not reject) &  \\ \cline{3-4}
+\multicolumn{1}{c}{\multirow{2}{*}{Y= Test 1}} & \multicolumn{1}{c|}{Y=1 (Reject)} & \multicolumn{1}{l|}{$\pi_{11}$} & \multicolumn{1}{l|}{$\pi_{22}$} & $\pi_{1 \cdot }$ \\ \cline{3-4}
+\multicolumn{1}{c}{} & \multicolumn{1}{c|}{Y=0 (Do not reject)} & \multicolumn{1}{l|}{$\pi_{21}$} & \multicolumn{1}{l|}{$\pi_{22}$} & $\pi_{2\cdot}$ \\ \cline{3-4}
+ &  & $\pi_{\cdot 1}$ & $\pi_{\cdot 2}$ & $\pi_{\cdot \cdot}$
+\end{tabular}
+\end{table}
+
+Goal of Bonferroni is to control the family wise error rate (FWER), i.e., FWER$<\alpha$. 
+
+FWER $= P(X=1 \bigcup Y=1) = P(X=1)+P(Y=1)-P(X=1 \bigcap Y=1)=\pi_{1 \cdot}+\pi_{\cdot 1} - \pi_{11}$
+
+Note that $\sigma^2_{XY}=E[XY]-E[X]E[Y]=\pi_{11}-\pi_{\cdot 1}\pi_{1 \cdot}$
+
+Thus FWER $=\pi_{1\cdot}+\pi_{\cdot 1}-\sigma^2_{XY}-\pi_{\cdot 1}\pi_{1 \cdot}$
+
+Under the Bonferroni correction, $\pi_{1 \cdot}=\pi_{ \cdot 1}=\alpha/2$
+
+FWER = $\alpha - \sigma^2_{XY} - \frac{\alpha^2}{4}<\alpha$
+(When the two tests are correlated, $\sigma^2_{XY}>0$). 
+
+Thus we see Bonferroni is conservative when tests are correlation. 
+
+Question: won't it be conservative even when the tests aren't correlated?
+
+
+\section*{Research goals: big picture ideas }
+
+\subsection*{Limitations of methods for analysis of correlated data}
+
+\begin{table}[H]
+\begin{tabular}{lccccc}
+ & \begin{tabular}[c]{@{}c@{}}Repeated \\ Covariates\end{tabular} & Non-normal & Missing & Mistimed & \begin{tabular}[c]{@{}c@{}}Nominal \\ Type I error\end{tabular} \\ \cline{2-6} 
+\multicolumn{1}{l|}{Multivariate} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{X} \\ \cline{2-6} 
+\multicolumn{1}{l|}{Mixed Model} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{} \\ \cline{2-6} 
+\multicolumn{1}{l|}{Generalized Mixed Model} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{} \\ \cline{2-6} 
+\multicolumn{1}{l|}{GEE} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{} \\ \cline{2-6} 
+\multicolumn{1}{l|}{Quazi (Ringham)} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X (?)} \\ \cline{2-6} 
+\end{tabular}
+\end{table}
+
+
+\subsection*{How we do inference with frequentest statistics}
+Example: $\dfrac{\overline{x}-\mu}{\frac{S}{\sqrt{n}}} \sim t_{n-1}$
+
+\begin{center}
+Data 
+
+\hspace{18mm} $\downarrow$  estimation
+
+Parameter estimates (i.e., $\overline{x}$, $S$)
+
+$\downarrow$ 
+
+Test Statistics
+
+$\downarrow$ 
+
+Specify the distribution of the test statistic under the null ($t_{n-1}$)
+
+$\downarrow$ 
+
+P-value 
+
+$\downarrow$ 
+
+Tenure
+\end{center}
+In order to specify the distribution of the test statistic under the null, we must \emph{understand the parameter estimate distribution} (i.e., $\dfrac{\overline{x}-\mu}{\frac{S}{\sqrt{n}}} \sim \frac{N(0,1)}{\sqrt{\chi^2_{n-1}/(n-1)}}=t_{n-1}$). This will be your job this spring. 
+\end{document}
