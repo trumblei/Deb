@@ -1,0 +1,139 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{schenkman_exercise_2012}
+Schenkman M, Hall DA, Barón AE et~al.
+\newblock Exercise for people in early- or mid-stage {Parkinson} disease: a
+  16-month randomized controlled trial.
+\newblock \emph{Physical Therapy} 2012; 92(11): 1395--1410.
+
+\bibitem{muller_power_1992}
+Muller KE, Lavange LM, Ramey SL et~al.
+\newblock Power calculations for general linear multivariate models including
+  repeated measures applications.
+\newblock \emph{Journal of the American Statistical Association} 1992; 87(420):
+  1209--1226.
+
+\bibitem{muller_statistical_2007}
+Muller KE, Edwards LJ, Simpson SL et~al.
+\newblock Statistical tests with accurate size and power for balanced linear
+  mixed models.
+\newblock \emph{Statistics in Medicine} 2007; 26(19): 3639--3660.
+
+\bibitem{li_power_2013}
+Li Z and McKeague IW.
+\newblock Power and {Sample} {Size} {Calculations} for {Generalized}
+  {Estimating} {Equations} via {Local} {Asymptotics}.
+\newblock \emph{Statistica Sinica} 2013; \doi{10.5705/ss.2011.081}.
+\newblock
+  \urlprefix\url{http://www3.stat.sinica.edu.tw/statistica/j23n1/J23N111/J23N111.html}.
+
+\bibitem{stiger_anova_1998}
+Stiger TR, Kosinski AS, Barnhart HX et~al.
+\newblock Anova for repeated ordinal data with small sample size? a comparison
+  of anova, manova, wls and gee methods by simulation.
+\newblock \emph{Communications in Statistics - Simulation and Computation}
+  1998; 27(2): 357--375.
+\newblock \doi{10.1080/03610919808813485}.
+\newblock \urlprefix\url{https://doi.org/10.1080/03610919808813485}.
+
+\bibitem{tu_power_2007}
+Tu XM, Zhang J, Kowalski J et~al.
+\newblock Power analyses for longitudinal study designs with missing data.
+\newblock \emph{Statistics in Medicine} 2007; 26(15): 2958--2981.
+
+\bibitem{ringham_multivariate_2016}
+Ringham BM, Kreidler SM, Muller KE et~al.
+\newblock Multivariate test power approximations for balanced linear mixed
+  models in studies with missing data.
+\newblock \emph{Statistics in Medicine} 2016; 35(17): 2921--2937.
+
+\bibitem{qaqish_family_2003}
+Qaqish BF.
+\newblock A family of multivariate binary distributions for simulating
+  correlated binary variables with specified marginal means and correlations.
+\newblock \emph{Biometrika} 2003; 90(2): 455--463.
+
+\bibitem{edwards_r2_2008}
+Edwards LJ, Muller KE, Wolfinger RD et~al.
+\newblock An {R}2 statistic for fixed effects in the linear mixed model.
+\newblock \emph{Statistics in Medicine} 2008; 27(29): 6137--6157.
+
+\bibitem{barton_hypothesis_1989}
+Barton CN and Cramer EC.
+\newblock Hypothesis {Testing} in {Multivariate} {Linear} {Models} with
+  {Randomly} {Missing} {Data}.
+\newblock \emph{Communications in Statistics - Simulation and Computation}
+  1989; 18(3): 875--895.
+
+\bibitem{catellier_tests_2000}
+Catellier DJ and Muller KE.
+\newblock Tests for {Gaussian} repeated measures with missing data in small
+  samples.
+\newblock \emph{Statistics in Medicine} 2000; 19(8): 1101--1114.
+
+\bibitem{little_statistical_2002}
+Little RJA and Rubin DB.
+\newblock \emph{Statistical {Analysis} with {Missing} {Data}}.
+\newblock 2nd edition ed. Hoboken, N.J: Wiley-Interscience, 2002.
+
+\bibitem{laird_random-effects_1982}
+Laird NM and Ware JH.
+\newblock Random-effects models for longitudinal data.
+\newblock \emph{Biometrics} 1982; 38(4): 963--974.
+
+\bibitem{mckeon_f_1974}
+McKeon JJ.
+\newblock F {Approximations} to the {Distribution} of {Hotelling}'s {T}2 0.
+\newblock \emph{Biometrika} 1974; 61(2): 381--383.
+
+\bibitem{gosho_comparison_2017}
+Gosho M, Hirakawa A, Noma H et~al.
+\newblock Comparison of bias-corrected covariance estimators for {MMRM}
+  analysis in longitudinal data with dropouts.
+\newblock \emph{Statistical Methods in Medical Research} 2017; 26(5):
+  2389--2406.
+\newblock \doi{10.1177/0962280215597938}.
+
+\bibitem{arnold_theory_1981}
+Arnold SF.
+\newblock \emph{The {Theory} of {Linear} {Models} and {Multivariate}
+  {Analysis}}.
+\newblock 1st edition ed. New York: John Wiley \& Sons Inc, 1981.
+
+\bibitem{kenward_small_1997}
+Kenward MG and Roger JH.
+\newblock Small sample inference for fixed effects from restricted maximum
+  likelihood.
+\newblock \emph{Biometrics} 1997; 53(3): 983--997.
+
+\bibitem{kenward_improved_2009}
+Kenward MG and Roger JH.
+\newblock An improved approximation to the precision of fixed effects from
+  restricted maximum likelihood.
+\newblock \emph{Computational Statistics \& Data Analysis} 2009; 53(7):
+  2583--2595.
+
+\bibitem{noauthor_sas_nodate}
+{SAS Institute Inc}.
+\newblock {SAS} 9.4, 2017.
+
+\bibitem{johnson_powerlib:_2009}
+Johnson JL, Muller KE, Slaughter JC et~al.
+\newblock {POWERLIB}: {SAS}/{IML} {Software} for {Computing} {Power} in
+  {Multivariate} {Linear} {Models}.
+\newblock \emph{Journal of Statistical Software} 2009; 30(5).
+
+\bibitem{kreidler_glimmpse:_2013}
+Kreidler SM, Muller KE, Grunwald GK et~al.
+\newblock {GLIMMPSE}: {Online} {Power} {Computation} for {Linear} {Models} with
+  and without a {Baseline} {Covariate}.
+\newblock \emph{Journal of Statistical Software} 2013; 54(10).
+
+\end{thebibliography}

@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2018/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: masters52.aux
+The style file: SageV.bst
+Database file #1: JoseyThesis02.bib
+You've used 21 entries,
+            2484 wiz_defined-function locations,
+            678 strings with 8769 characters,
+and the built_in function-call counts, 22923 in all, are:
+= -- 2692
+> -- 232
+< -- 0
++ -- 116
+- -- 58
+* -- 1478
+:= -- 2082
+add.period$ -- 68
+call.type$ -- 21
+change.case$ -- 21
+chr.to.int$ -- 0
+cite$ -- 21
+duplicate$ -- 2873
+empty$ -- 1952
+format.name$ -- 75
+if$ -- 4966
+int.to.chr$ -- 0
+int.to.str$ -- 21
+missing$ -- 199
+newline$ -- 117
+num.names$ -- 21
+pop$ -- 1356
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 161
+stack$ -- 0
+substring$ -- 3516
+swap$ -- 482
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 127
+width$ -- 23
+write$ -- 244
